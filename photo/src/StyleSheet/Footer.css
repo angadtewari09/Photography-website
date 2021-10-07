@@ -1,0 +1,238 @@
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    min-height: auto;
+    flex-direction: column;
+    background: #ede7f6;
+}
+footer {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 65px 100px;
+    padding-bottom:0 !important;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: none;
+    overflow-x: none;
+
+}
+footer .foot-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left:auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+footer .foot-container .sec {
+    margin-left:3rem;
+    margin-right:3rem;
+}
+footer .foot-container .sec.aboutus {
+    width: 35%;
+}
+footer .foot-container h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: left;
+}
+footer .foot-container h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left:auto;
+    width:50px;
+    height: 3px;
+    background: #6d766d;
+}
+footer p {
+    color: #999;
+    text-align: left;
+}
+.sci {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    height: auto;
+    margin-left:-47px;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: flex;
+    flex-direction: row;
+    width: 42px;
+    height: 41px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:.51rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #6d766d;;
+    padding:3px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.3s;
+}
+.sci li a:hover {
+    color:#999;
+}
+/*Quick links*/
+.quicklinks {
+    position: relative;
+    width: 17%;
+    justify-content: left;
+}
+.quicklinks h2 {
+    justify-content: left;
+    text-align: left;
+    margin-left: 0.5rem;
+}
+.quicklinks ul {
+    justify-content: left;
+    text-align: left;
+}
+.quicklinks ul li {
+    list-style: none;
+    justify-content: left;
+}
+.quicklinks ul li a{
+    color:#999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    justify-content: left;
+}
+.quicklinks ul li a:hover{
+    color:#fff;
+}
+/*Contacts*/
+.contact {
+    width:calc(36%- 60px);
+    margin-right: 0!important;
+    text-align: left;
+}
+.contact .info {
+    position: relative;
+    text-align: left;
+
+}
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: left;
+    align-content: left;
+    margin-left: -30px;
+    text-align: left;
+    justify-content: left;
+}
+.contact .info li span:nth-child(1) {
+    color:#fff;
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+}
+.contact .info li span {
+    color: #999;
+    transition: 0.4s all ease-in-out;
+    text-align: left;
+}
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+    transition: 0.4s all ease-in-out;
+}
+.contact .info li span:hover {
+    color: #fff;
+}
+
+.address {
+    text-align: left;
+    margin-left: 1rem;
+}
+@media (max-width:1031px) {
+    footer {
+        padding: 40px;
+    }
+    footer .foot-container {
+        flex-direction: column;
+    }
+    footer .foot-container .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .foot-container .sec.aboutus,
+    .quicklinks,
+    .contact {
+        width: 100%;
+    }
+}
+
+/*Contact Form*/
+.input-box {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    margin:10px;
+    border:none;
+    border-bottom: solid 2px #333;
+    border-radius: 4px;
+    background:#333;
+    outline:none;
+    position:relative;
+    left:0;
+    padding-left:15px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.textarea-box {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px;
+    border:none;
+    border-bottom: solid 2px #333;
+    border-radius: 4px;
+    background:#333;
+    outline:none;
+    position:relative;
+    left:0;
+    resize: none;
+    padding-left:15px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.form-submit {
+    background: #6d766d;
+    color:white;
+    height: 2.3rem;
+    width: 5rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    transition:0.5s ease-in-out all;
+    position: absolute;
+    left:12px;
+}
+.form-submit:hover {
+    opacity: 1;
+}

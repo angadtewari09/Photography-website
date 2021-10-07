@@ -1,0 +1,207 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+.image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border:6px solid white;
+    display: flex;
+    margin: auto;
+
+}
+.main-container {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/src/components/images/header_image.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+}
+.main-area {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom:2rem;
+
+}
+.content {
+    color:white;
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+    top:3rem;
+    margin-bottom: 1.5rem;
+}
+.content h1 {
+    color: #6d766d;;
+    font-size: 2.6rem;
+}
+#title {
+    background: rgba(255,255,255,0.1);
+    margin:30px auto;
+    width: 35%;
+    font-size: 27px;
+    font-weight: 399;
+}
+.qoute #p1 {
+    font-size: 20px;
+    font-weight: 300;
+    width: 60%;
+    margin:auto;
+    opacity: 0.8;
+}
+.qoute span {
+    font-size:18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:darkgreen;
+    opacity: 0.69;
+    letter-spacing: 5px;
+}
+.icons .fa {
+    margin:20px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color:white;
+    padding:9px;
+    opacity: 0.7;
+    border:2px white solid;
+    border-radius:50%;
+    transition: 0.5s all ease-in-out;
+}
+.icons .fa:hover {
+    opacity:1;
+} 
+
+/*About section*/
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:auto;
+    min-height: 78vh;
+    padding-top:10rem;
+    padding-bottom: 5rem;
+    margin-top: auto;
+}
+.left {
+    width: 50%;
+    margin:0 20px 0 20px ;
+}
+.right {
+    width: 50%;
+    margin:0 20px 0 20px ;
+}
+.DP {
+    height: 500px;
+    width: 60%;
+}
+.profile {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#name2 {
+    text-align: left;
+    font-weight: 500;
+    font-size:3rem;
+    font-family: 'Poppins',sans-serif;
+}
+#about-me {
+    text-align:left;
+
+}
+button.butt {
+    float:left;
+    /* background: darkgreen; */
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    width:180px;
+    font-weight: 500;
+    color: #6d766d;
+    text-transform: uppercase;
+    font-size:17px;
+    padding: 12px;
+    border:2px solid #6d766d;
+    border-radius: 25px;
+    transition: 0.4s all ease-in-out;
+}
+button.butt:hover {
+    background: #6d766d;
+    color:white;
+}
+#gallery-title {
+    text-transform: uppercase;
+    font-size:2.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+/*Image-gallery-starts-here*/
+.gallery-container {
+    padding:50px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    transition:  0.5s all ease-in-out;
+}
+.image-card {
+    padding:0px;
+    margin: 7px;
+    box-shadow: 5px 4px #8888;
+    border-radius: 2px;
+    transition:  0.5s all ease-in-out;
+}
+.gallery-image {
+    width: 100%;
+    transition:  0.5s all ease-in-out;
+    
+}
+#qouteblock {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+@media(max-width:1300px) {
+    .gallery-container {
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            transition:  0.5s all ease-in-out;
+    }   
+}
+@media(max-width: 990px)
+{
+    .gallery-container {
+        width: 50%;
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+        transition: 0.5s all ease-in-out;
+    } 
+}
+@media(max-width: 650px) {
+}
+/*Iamge gallery-ends-here*/
+
+#tags {
+    text-align: center;
+    padding: 20px 0;
+    background: #6d766d;
+    opacity: 0.7;
+}
+.tag {
+    outline: none;
+    border: none;
+    color: #eee;
+    margin: 0px 10px;
+    background-color: transparent;
+    cursor:pointer;
+}
+.active {
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    transition: all ease-in-out 0.1s;
+}
