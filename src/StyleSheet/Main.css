@@ -18,6 +18,7 @@ html {
     min-height: 100vh;
     height: auto;
     display: flex;
+    
 }
 .main-area {
     /* display: flex;
@@ -27,7 +28,6 @@ html {
     margin-right: auto;
     width: 90%;
     margin-bottom:2rem;
-
 }
 .content {
     color:white;
@@ -35,6 +35,7 @@ html {
     position: relative;
     top:3rem;
     margin-bottom: 1.5rem;
+    margin-top: 3rem;
 }
 .content h1 {
     color: #6d766d;;
@@ -154,15 +155,18 @@ button.butt:hover {
 .image-card {
     padding:0px;
     margin: 7px;
-    box-shadow: 5px 4px #8888;
+    box-shadow: #808080 5px 5px, #A9A9A9 10px 10px,#C0C0C0 15px 15px;
+    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
     border-radius: 2px;
     transition:  0.5s all ease-in-out;
 }
 .gallery-image {
     width: 100%;
+    height: 100%;
     transition:  0.5s all ease-in-out;
     
 }
+
 #qouteblock {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;

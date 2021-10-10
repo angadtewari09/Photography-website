@@ -9,7 +9,7 @@ body {
 footer {
     position: relative;
     width: auto;
-    height: 50vh;
+    height: auto;
     padding-top: 65px;
     padding-bottom: 65px;
     padding-bottom:0 !important;
