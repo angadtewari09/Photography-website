@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { ReactDOM } from 'react'
+import { Link } from 'react-scroll'
 import 'font-awesome/css/font-awesome.min.css'
 
 
@@ -47,15 +48,10 @@ class Header extends Component {
     handleClick = ()=> {
         this.setState({clicked: !this.state.clicked})
     }
-    handleScroll = () => {
-        
-    }
+    
     Scrollview = (link) => {
         console.log(link)
         document.querySelector(link).scrollIntoView();
-    }
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll)
     }
 
 
@@ -74,13 +70,13 @@ class Header extends Component {
                 {MenuItems.map( (item,index) => {
                     return(
                         <li>
-                            <a  onClick={() => {
+                            <Link  onClick={() => {
                                 this.Scrollview(item.link);
                             }}
                                 className={item.ClassName} 
                                 href={item.href}>
                                 {item.title}
-                            </a>
+                            </Link>
                         </li>
                     )   
                 })}

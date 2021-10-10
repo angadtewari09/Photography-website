@@ -40,8 +40,7 @@ function ContactForm() {
         )
 }
 function Footer() {
-    return (
-        
+    return (     
     <body>
         <footer className="footer" id="footer">
             <div className="foot-container">
@@ -83,12 +82,11 @@ function Footer() {
                    <ContactForm/>
                 </div> 
             </div>
-
+            <div>
+                <p className="copyright">&copy;{new Date().getFullYear()} copyright. All rights reserved.</p>
+            </div>
         </footer>
-        
     </body>
-
     )
 }
-
 export default Footer
