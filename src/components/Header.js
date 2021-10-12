@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { ReactDOM } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-scroll'
 import 'font-awesome/css/font-awesome.min.css'
 
@@ -42,7 +43,8 @@ class Header extends Component {
     state = { 
                 clicked: false,
                 show:true,
-                scrollPos:0
+                scrollPos:0,
+                isOpen: false
             }
 
     handleClick = ()=> {
@@ -53,8 +55,10 @@ class Header extends Component {
         console.log(link)
         document.querySelector(link).scrollIntoView();
     }
-
-
+    toggle =() => {
+        this.setState( {isOpen: !this.state.isOpen });
+        this.setState({clicked: !this.state.clicked});
+    }
 
     render() {
         return (
@@ -72,6 +76,7 @@ class Header extends Component {
                         <li>
                             <Link  onClick={() => {
                                 this.Scrollview(item.link);
+                                this.toggle();
                             }}
                                 className={item.ClassName} 
                                 href={item.href}>

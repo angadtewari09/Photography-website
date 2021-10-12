@@ -2,7 +2,7 @@
   background: rgba(16,16,16);
   position: fixed;
   width: 100%;
-  z-index: 1111111;
+  z-index: 11;
   height: 65px;
   display: flex;
   justify-content: center;
@@ -32,6 +32,7 @@
   width: 70vw;
   justify-content: end;
   margin-right: 2rem;
+  background: rgb(16,16,16);
 }
 .nav-links  {
   color: white;
@@ -54,7 +55,9 @@
 }
 @media screen and (max-width:960px) {
   .NavbarItems {
-   position: relative;;
+   position: relative;
+   background: rgb(16,16,16);
+
   }
   .nav-menu {
     display: flex;
@@ -62,18 +65,21 @@
     width: 90vw;
     margin-left:auto;
     margin-right: auto;
+    background: rgba(16,16,16);
     position: absolute;
-    height: 400px;
-    top: 60px;
+    height: 370px;
+    top: -100px;
     left:-100%;
     opacity: 0;
-    transition: all 0.5s ease-in-out; 
+    transition: all .6s ease-in-out; 
   }
   .nav-menu.active {
     background: rgb(16,16,16);
+    height: auto;
     left:auto;
+    top: 62px;
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.6s ease-in-out;
     z-index:1;
 
   }
@@ -86,6 +92,7 @@
     display :table;
     display: flex;
     justify-content: center;
+    background: rgb(16,16,16);
 
     margin-left:-2rem;
   } 

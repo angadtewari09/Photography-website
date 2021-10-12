@@ -1,6 +1,7 @@
 import React , {useEffect} from 'react'
 import { useState } from 'react'
 import CenterImage from './images/center_image.jpg'
+import Image from './images/images 2.jfif'
 import 'font-awesome/css/font-awesome.min.css'
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
 import AOS from 'aos';
@@ -17,7 +18,7 @@ const images = [
     {id: '7' , imageName: 'IMG_7.jpg', tag: 'pro'},
     {id: '8' , imageName: 'IMG_8.jpg', tag: 'free'},
     {id: '9' , imageName: 'IMG_9.jpg', tag: 'new'},
-   
+    {id: '10' , imageName: 'IMG_10.jpeg', tag: 'free'}
 ];
 
 /*Filter-Buttons*/
@@ -48,7 +49,7 @@ function Main() {
             <div className="main-container">
             <div className="main-area" id="home">
                <div className="content">
-                    <img className="image" src= {CenterImage} alt="My Profile Image" />
+                    <img className="image" src= {Image} alt="My Profile Image" />
                     <h1 id="name">John Doe</h1>
                     <h2 id="title">Photographer | Videographer</h2>
                     <div className="description">
