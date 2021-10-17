@@ -24,7 +24,7 @@ const images = [
 /*Filter-Buttons*/
 const TagButton = ({name , handleSetTag, tagActive }) => {
     return(
-        <button className={`tag ${ tagActive ? 'active' : null}`} onClick={ () => handleSetTag(name)}>{name.toUpperCase()}</button>
+        <button className={`tag ${ tagActive ? 'activated' : null}`} onClick={ () => handleSetTag(name)}>{name.toUpperCase()}</button>
     );
 }
 

@@ -57,7 +57,7 @@ class Header extends Component {
     }
     toggle =() => {
         this.setState( {isOpen: !this.state.isOpen });
-        this.setState({clicked: !this.state.clicked});
+        /*this.setState( {isOpen: !this.state.isOpen });*/
     }
 
     render() {
@@ -70,7 +70,7 @@ class Header extends Component {
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className = {this.state.clicked ? 'fas fa-times' : 'fas fa-bars'} ></i>
                 </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}> 
+                <ul className={this.state.clicked ? 'nav-menu' : 'nav-menu close'}> 
                 {MenuItems.map( (item,index) => {
                     return(
                         <li>
@@ -78,7 +78,7 @@ class Header extends Component {
                                 this.Scrollview(item.link);
                                 this.toggle();
                             }}
-                                className={item.ClassName} 
+                                className={item.ClassName} /*ClassName="nav-links" */
                                 href={item.href}>
                                 {item.title}
                             </Link>

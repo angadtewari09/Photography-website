@@ -251,7 +251,7 @@ button.butt:hover {
     background-color: transparent;
     cursor:pointer;
 }
-.active {
+.activated {
     font-weight: bold;
     border-bottom: 2px solid #eee;
     transition: all ease-in-out 0.1s;
